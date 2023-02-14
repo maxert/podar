@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Подарок</title>
+</head>
+<style>
+    body {
+        position: relative;
+        font-family: Brush Script MT, Brush Script Std, cursive;
+    }
+
+    .valentine_text {
+        color: white;
+        font-size: 16px;
+        font-family: Brush Script MT, Brush Script Std, cursive;
+        position: absolute;
+        left: 50%;
+        bottom: 50px;
+        transform: translate(-50%, 0%);
+        width: 100%;
+        max-width: 300px;
+        text-align: center;
+    }
+    .block>div>div{
+        margin-bottom: 10px;
+    }
+    .block>div input{
+        padding: 10px;
+        border: 1px solid gray;
+        border-radius: 5px;
+        text-align: center;
+    }
+    .block>div button{
+        background-color: gray;
+        border: none;
+        color: white;
+        border-radius: 30px;
+        width: 150px;
+        margin: 0 auto;
+        padding: 10px;
+        margin-top: 10px;
+    }
+    .block>div{
+        display: flex;
+        flex-direction: column;
+    }
+    .block.active{
+        display: flex;
+    }
+    .block {
+        display: none;
+        align-items: center;
+        justify-content: center;
+        background: white;
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+</style>
+
+<body style="margin: 0; display: flex;overflow: hidden;">
+    <canvas>
+
+    </canvas>
+    <div class="valentine_text">
+        <span class="name"></span>, Мы с тобой познакомились всего вчера но хочу тебе пожелать, всего самого наилучшего!
+        Нет ничего в жизни ценнее и важнее любви. Любовь согревает, вдохновляет, дарит крылья и помогает достигать невозможного. Желаю тебе встретить свою любовь и пронести ее через годы и расстояния! С Днем святого Валентина!
+        <br>
+        P.S Максим
+    </div>
+    <div class="block active">
+        <div>
+            <div>Чтобы получить подарок нужно ввести имя</div>
+            <input type="text">
+            <button>Отправить</button>
+        </div>
+    </div>
+</body>
+<script src="./script.js"></script>
+
+</html>
